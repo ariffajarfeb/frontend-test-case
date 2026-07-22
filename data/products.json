@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "name": "Mechanical Keyboard",
+    "category": "Accessories",
+    "price": 850000,
+    "stock": 12
+  },
+  {
+    "id": 2,
+    "name": "Wireless Mouse",
+    "category": "Accessories",
+    "price": 325000,
+    "stock": 24
+  },
+  {
+    "id": 3,
+    "name": "USB-C Hub",
+    "category": "Connectivity",
+    "price": 475000,
+    "stock": 9
+  },
+  {
+    "id": 4,
+    "name": "Laptop Stand",
+    "category": "Workspace",
+    "price": 390000,
+    "stock": 15
+  },
+  {
+    "id": 5,
+    "name": "Noise Cancelling Headphones",
+    "category": "Audio",
+    "price": 1750000,
+    "stock": 6
+  }
+]

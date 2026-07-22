@@ -1,0 +1,134 @@
+.main {
+  --form-accent: #18181b;
+  --form-accent-dark: #3f3f46;
+  --form-ring: rgba(24, 24, 27, 0.12);
+  width: min(940px, calc(100% - 40px));
+  margin: 0 auto;
+  padding-bottom: 72px;
+}
+
+.layout {
+  width: min(100%, 540px);
+  margin: 0 auto;
+  padding-top: 70px;
+}
+
+.intro {
+  margin-bottom: 24px;
+}
+
+.intro h1 {
+  margin: 0 0 10px;
+  font-size: clamp(2.4rem, 6vw, 4rem);
+  letter-spacing: -0.04em;
+  line-height: 1.1;
+}
+
+.intro p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.panel {
+  padding: 28px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+}
+
+.form {
+  display: grid;
+}
+
+.form label {
+  margin: 0 0 7px;
+  font-size: 0.82rem;
+  font-weight: 600;
+}
+
+.form input {
+  width: 100%;
+  margin-bottom: 18px;
+  padding: 12px 13px;
+  color: var(--text);
+  background: #ffffff;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  outline: none;
+}
+
+.form input::placeholder {
+  color: #71717a;
+}
+
+.form input:hover {
+  border-color: var(--secondary-strong);
+}
+
+.form input:focus {
+  border-color: var(--form-accent);
+  box-shadow: 0 0 0 3px var(--form-ring);
+}
+
+.form button {
+  justify-self: center;
+  margin-top: 4px;
+  padding: 11px 20px;
+  color: #ffffff;
+  background: var(--form-accent);
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.form button:hover {
+  background: var(--form-accent-dark);
+}
+
+.result {
+  margin-top: 24px;
+  padding: 18px;
+  background: var(--surface-raised);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--primary);
+  border-radius: 4px;
+}
+
+.result span {
+  color: var(--muted);
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.result h2 {
+  margin: 10px 0 5px;
+  font-size: 1.15rem;
+}
+
+.result p {
+  margin: 4px 0;
+  color: var(--muted);
+}
+
+.result small {
+  display: block;
+  margin-top: 12px;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+@media (max-width: 520px) {
+  .main {
+    width: min(100% - 28px, 940px);
+  }
+
+  .layout {
+    padding-top: 48px;
+  }
+
+  .panel {
+    padding: 22px;
+  }
+}
